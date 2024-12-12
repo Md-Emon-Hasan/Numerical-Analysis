@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <math.h>
 
-// Function g(x) derived for proper convergence: g(x) = cbrt(4x + 9)
+// Function g(x) derived from f(x) for fixed point iteration (example: g(x) = (x^3 - 9) / 4)
 double g(double x) {
-    return cbrt(4 * x + 9);  // Cubic root for proper convergence
+    return (pow(x, 3) - 9) / 4;  // Rearranged form of f(x) = x^3 - 4x - 9
 }
 
 // Fixed Point Iteration Method
